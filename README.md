@@ -1,14 +1,20 @@
+# NAME : LINGAESHWAR K
+
 # MODULE-6
+
 Module 6 respository for lab
 ---
-1.# Program: Area and Perimeter of a Circle Using Pointer and Function
+
+# 1.Program: Area and Perimeter of a Circle Using Pointer and Function
 
 *Aim:*  
+
 To write a C program that calculates the area and perimeter (circumference) of a circle using functions with pointer arguments.
 
 ---
 
-*Algorithm:*  
+*Algorithm:* 
+
 1. Start the program.  
 2. Define a macro constant pi as 3.14.  
 3. Define two functions:  
@@ -24,10 +30,11 @@ To write a C program that calculates the area and perimeter (circumference) of a
 
 ---
 
-*Source Code:*  
-c
+*Source Code:* 
+
+```c
 #include <stdio.h>
-#define pi 3.14
+#define pi=3.14
 
 void area(int *r) {
     printf("Area of Circle = %.2f\n", pi * (*r) * (*r));
@@ -44,8 +51,10 @@ int main() {
     peri(&r);
     return 0;
 }
+```
 
 *output*
+
 <img width="728" height="201" alt="image" src="https://github.com/user-attachments/assets/9185bd83-d961-439b-9cd4-355fccc2714a" />
 
 *Result:\n*
@@ -53,14 +62,16 @@ int main() {
 The program successfully calculates and displays the area and perimeter of a circle using functions with pointer arguments.
 ---
 
-2.# Program: Add Elements to an Existing Array Using realloc()
+# 2.Program: Add Elements to an Existing Array Using realloc()
 
-*Aim:*  
+*Aim:* 
+
 To write a C program that dynamically allocates memory for an array using malloc(), expands its size using realloc(), and adds new elements to it.
 
 ---
 
 *Algorithm:*  
+
 1. Start the program.  
 2. Declare an integer pointer arr to store the base address of dynamically allocated memory.  
 3. Define two variables:  
@@ -78,7 +89,8 @@ To write a C program that dynamically allocates memory for an array using malloc
 ---
 
 *Source Code:*  
-c
+
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -114,24 +126,29 @@ int main()
     free(arr);
     return 0;
 }
+```
 
 *output*
+
 <img width="437" height="115" alt="image" src="https://github.com/user-attachments/assets/d9bfc7ff-948f-4bff-98e3-aeb462e30129" />
 
 
 *Result:\n*
+
 The program dynamically allocates memory for an array, expands it using realloc(), and successfully stores and displays both the original and newly added elements.
 ---
 
 
-3.# Program: Store and Display Student Information Using Structures
+# 3.Program: Store and Display Student Information Using Structures
 
-*Aim:*  
+*Aim:*
+
 To write a C program using structures to store and display the information of 5 students including roll number, name, and marks.
 
 ---
 
-*Algorithm:*  
+*Algorithm:*
+
 1. Start the program.  
 2. Define a structure named info with the following members:  
    - name → character array to store the student’s name.  
@@ -147,7 +164,8 @@ To write a C program using structures to store and display the information of 5 
 ---
 
 *Source Code:*
-c
+
+```c
 #include <stdio.h>
 
 struct info {
@@ -175,23 +193,28 @@ int main()
         printf("\n");
     }
 }
+```
 
 *output*
+
 <img width="638" height="576" alt="image" src="https://github.com/user-attachments/assets/35e932ee-0de1-4eb8-80db-ebe0159a47eb" />
 
 
 *Result*
+
 The program successfully stores and displays the roll number, name, and marks of 5 students using structures.
 
 ---
-4.# Program: EB Bill Calculation Using Structures
+# 4.Program: EB Bill Calculation Using Structures
 
 *Aim:*  
+
 To write a C program using structures to calculate the electricity bill for 3 customers based on their previous and current readings.
 
 ---
 
 *Algorithm:*  
+
 1. Start the program.  
 2. Define a structure Customer with the following members:  
    - cust_no → Customer number.  
@@ -214,7 +237,8 @@ To write a C program using structures to calculate the electricity bill for 3 cu
 ---
 
 *Source Code:*
-c
+
+```c
 #include <stdio.h>
 
 struct Customer {
@@ -253,24 +277,28 @@ int main() {
 
     return 0;
 }
+```
 
 *output*
 
 <img width="686" height="523" alt="image" src="https://github.com/user-attachments/assets/73c2048b-4750-4b49-93da-6bbfa95bb455" />
 
-*Ressult*
+*Result*
 
 The program successfully calculates and displays the electricity bill for 3 customers based on their meter readings using structures.
 
 ---
-5.# Program: Gas Customer Bill Calculation Using Structures
+
+# 5.Program: Gas Customer Bill Calculation Using Structures
 
 *Aim:*  
+
 To write a C program using structures to calculate and display gas bill details for 3 customers, applying a subsidy on the total amount.
 
 ---
 
 *Algorithm:*  
+
 1. Start the program.  
 2. Define a structure gas_cust with the following members:  
    - cust_no → Customer number.  
@@ -290,7 +318,8 @@ To write a C program using structures to calculate and display gas bill details 
 ---
 
 *Source Code:*
-c
+
+```c
 #include <stdio.h>
 struct gas_cust
 {
@@ -336,6 +365,7 @@ int main()
 
     return 0;
 }
+```
 
 *output*
 
